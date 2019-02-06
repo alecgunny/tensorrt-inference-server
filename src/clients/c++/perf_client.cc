@@ -680,13 +680,13 @@ class ConcurrencyManager {
       return;
     }
 
-    if (batch_size_ > ctx->MaxBatchSize()) {
-      *err = nic::Error(
-          ni::RequestStatusCode::INVALID_ARG,
-          "expecting batch size <= " + std::to_string(ctx->MaxBatchSize()) +
-              " for model '" + ctx->ModelName() + "'");
-      return;
-    }
+//    if (batch_size_ > ctx->MaxBatchSize()) {
+//      *err = nic::Error(
+//          ni::RequestStatusCode::INVALID_ARG,
+//          "expecting batch size <= " + std::to_string(ctx->MaxBatchSize()) +
+//              " for model '" + ctx->ModelName() + "'");
+//      return;
+//    }
 
     // Prepare context for 'batch_size' batches. Request that all
     // outputs be returned.
