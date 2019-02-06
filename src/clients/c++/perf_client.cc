@@ -728,7 +728,7 @@ class ConcurrencyManager {
 
     std::vector<uint8_t> input_buf(max_input_byte_size);
     for (size_t i = 0; i < input_buf.size(); ++i) {
-      input_buf[i] = rand();
+      input_buf[i] = 0;
     }
 
     // Initialize inputs to use random values...
@@ -854,7 +854,7 @@ class ConcurrencyManager {
 
     std::vector<uint8_t> input_buf(max_input_byte_size);
     for (size_t i = 0; i < input_buf.size(); ++i) {
-      input_buf[i] = rand();
+      input_buf[i] = 0;
     }
 
     // Initialize inputs to use random values...
